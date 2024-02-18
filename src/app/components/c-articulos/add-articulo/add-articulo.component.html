@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center">
+  <div class="card m-5" style="width: 50%;">
+    <div class="card-header px-4 py-3">
+      <h5>INSERTAR ARTÍCULO</h5>
+    </div>
+    <form class="card-body">
+      <div class="form-group m-2">
+        <label for="id">Id: </label>
+        <input type="text" class="form-control" name="id" placeholder="ID" [(ngModel)]="id" readonly>
+      </div>
+      <div class="form-group m-2">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" name="nombre" placeholder="Nombre" [(ngModel)]="nombre">
+      </div>
+      <div class="form-group m-2">
+        <label for="descripcion">Descripción</label>
+        <input type="text" class="form-control" name="descripcion" placeholder="Descripción" [(ngModel)]="descripcion">
+      </div>
+      <div class="form-group m-2">
+        <label for="precio">Precio</label>
+        <input type="number" class="form-control" name="precio" placeholder="Precio" [(ngModel)]="precio">
+      </div>
+      <hr>
+      <button class="btn btn-success m-2" (click)="insertar()">Insertar</button>
+      <button class="btn btn-dark m-2" (click)="cancelar()">Cancelar</button>
+    </form>
+  </div>
+</div>

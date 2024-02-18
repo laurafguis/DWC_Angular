@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center">
+    <div class="card m-5" style="width: 30%;">
+        <div class="card-header">
+            <h5><strong>{{articulo.nombre}}</strong></h5>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="../../../assets/{{articulo.id}}.jpg" alt="assets{{articulo.nombre}}">
+                <div class="mx-4">
+                    <div>
+                        <b>Nombre: </b> {{articulo.nombre}}
+                    </div>
+                    <div>
+                        <b>Descripcion: </b> {{articulo.descripcion}}
+                    </div>
+                    <div>
+                        <b>Precio: </b>{{articulo.precio}}€
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class=" d-flex justify-content-between align-items-center">
+                <a routerLink="/articulo/edit/{{articulo.id}}" class="btn btn-warning">Modificar</a> 
+                <button (click)="borrar(articulo.id)" class="btn btn-danger">Borrar</button>
+                <a class="btn btn-primary" (click)="cancelar()">Cancelar</a>
+            </div>
+        </div>
+

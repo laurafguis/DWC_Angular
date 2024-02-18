@@ -1,0 +1,25 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nombre": "Laura Fernández",
+      "cargo": "Programadora",
+      "phone": 602406806,
+      "votos": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Lucía Romero",
+      "cargo": "Administrativa Jefa",
+      "phone": 602406806,
+      "votos": 0
+    },
+    {
+      "id": 3,
+      "nombre": "Héctor Romero",
+      "cargo": "Analista",
+      "phone": 602406806,
+      "votos": 0
+    }
+  ]
+}
